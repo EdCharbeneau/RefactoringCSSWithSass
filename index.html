@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Index</title>
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/grid.css" rel="stylesheet">
+    <link href="/css/typography.css" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet">
+</head>
+<body>
+    <header id="master-header">
+        <div class="row">
+            <h1 class="col third">Example</h1>
+            <nav class="col two-thirds" id="primary">
+                <ul>
+                    <li><a href="#">morbi tristique</a></li>
+                    <li><a href="#">malesuada fames</a></li>
+                    <li><a href="#">neque laoreet</a></li>
+                    <li><a href="#">aenean et</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="row" id="main-content">
+        <nav class="col third" id="secondary">
+            <ul>
+                <li><a href="#">morbi tristique</a></li>
+                <li><a href="#">malesuada fames</a></li>
+                <li><a href="#">neque laoreet</a></li>
+                <li><a href="#">aenean et</a></li>
+            </ul>
+        </nav>
+        <section class="col two-thirds">
+            <header>
+                <h1 class="section-heading">Section Heading</h1>
+                <p>A short description of this section.</p>
+            </header>
+            <article>
+                <header>
+                    <h1>Article Header</h1>
+                    <time datetime="2010-08-07 11:11:03-0400" pubdate>08-07-2010</time>
+                    <p>
+                        By <span>Authors Name</span>
+                    </p>
+                </header>
+                @Html.Ipsum.p().h2().p().h3().p()
+                <footer>
+                    @Html.Ipsum.p(2)
+                </footer>
+            </article>
+        </section>
+    </div>
+    <footer id="master-footer">
+        <div class="row">
+            <section id="copyright" class="col full">@Html.Ipsum.p()</section>
+        </div>
+    </footer>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.inlineIpsum.min.js"></script>
+    <script>$('body *').inlineIpsum();</script>
+</body>
+</html>
