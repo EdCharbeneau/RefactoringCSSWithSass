@@ -1,0 +1,64 @@
+/*
+    A simple responsive grid system  
+
+    Usage:
+    <div class="grid">
+        <div class="col half"></div>
+        <div class="col half"></div>
+    </div>  
+*/
+/* line 11, ../sass/grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/grid.scss */
+.row {
+  margin: 0 auto;
+  max-width: 980px;
+  *zoom: 1;
+  padding: 20px 0;
+}
+/* line 22, ../sass/grid.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 27, ../sass/grid.scss */
+.row .col {
+  float: left;
+  padding: 0 24px;
+}
+/* line 30, ../sass/grid.scss */
+.row .col.full {
+  width: 100%;
+}
+/* line 33, ../sass/grid.scss */
+.row .col.half {
+  width: 50%;
+}
+/* line 36, ../sass/grid.scss */
+.row .col.quarter {
+  width: 25%;
+}
+/* line 39, ../sass/grid.scss */
+.row .col.third {
+  width: 33.33%;
+}
+/* line 42, ../sass/grid.scss */
+.row .col.two-thirds {
+  width: 66.66%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Small Device Styles here */
+  /* line 50, ../sass/grid.scss */
+  .row .col {
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
