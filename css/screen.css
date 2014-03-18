@@ -34,29 +34,29 @@ h1.section-heading {
   color: #808080;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 nav#primary ul {
   float: right;
 }
-/* line 51, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 nav#primary ul li {
   float: left;
 }
-/* line 55, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 nav#primary a {
   background-color: #d0d0d0;
   color: #1e1e1e;
   display: block;
   text-decoration: none;
-  border-radius: 3px;
   padding: 12px 6px;
   margin: 0 4px;
+  border-radius: 3px;
 }
-/* line 42, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 nav#primary a:hover {
   background-color: white;
 }
-/* line 62, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 nav#secondary a {
   background-color: #d0d0d0;
   color: #1e1e1e;
@@ -67,7 +67,7 @@ nav#secondary a {
   text-align: center;
   border: 1px #0ca0c6 solid;
 }
-/* line 42, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 nav#secondary a:hover {
   background-color: white;
 }
