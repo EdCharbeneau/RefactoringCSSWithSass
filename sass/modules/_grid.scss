@@ -12,11 +12,6 @@ $vertical-whitespace: 20px;
 $third: 33.33%;
 $two-thirds: 66.66%;
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 // Grid Mixins
 @mixin row() {
@@ -42,36 +37,4 @@ $two-thirds: 66.66%;
         width: auto !important;
         padding: 0 !important;
 	}
-}
-
-#master-header {
-	& > div {
-		@include row;
-		h1 {
-			@include column($third);
-		}
-		nav {
-			@include column($two-thirds);
-		}
-	}
-}
-
-#main-content {
-	@include row;
-	#secondary {
-		@include column($third);
-	}
-	& > section {
-		@include column($two-thirds);
-	}
-}
-
-#master-footer {
-	& > div {
-		@include row;
-		section {
-			@include column;
-		}
-	}
-
 }
