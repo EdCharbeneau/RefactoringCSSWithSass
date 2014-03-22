@@ -1,8 +1,9 @@
 /*
     Site or App Theme styles
 */
+@import "compass";
 
-@import "modules/reset",
+@import "compass/reset",
 		"modules/grid",
 		"modules/layout",
 		"modules/typography",
